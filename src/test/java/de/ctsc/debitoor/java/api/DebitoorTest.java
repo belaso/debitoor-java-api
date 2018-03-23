@@ -15,6 +15,8 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import de.ctsc.debitoor.java.api.expense.v4.Expense;
+
 public class DebitoorTest {
 
 	@Test
@@ -37,7 +39,15 @@ public class DebitoorTest {
 			String schemaName = entry.getKey();
 			String schemaVersion = entry.getValue();
 			InputStream schemaInputStream = debitoor.get("/api/schemas/" + schemaName + "/" + schemaVersion);
-			File schemaFile = new File(dir, schemaName + ".json");
+			File schemaDir = new File(dir, schemaName);
+			if (!schemaDir.exists()) {
+				schemaDir.mkdir();
+			}
+			File schemaVersionDir = new File(schemaDir, schemaVersion);
+			if (!schemaVersionDir.exists()) {
+				schemaVersionDir.mkdir();
+			}
+			File schemaFile = new File(schemaVersionDir, schemaName + ".json");
 			Files.copy(schemaInputStream, schemaFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 		}
 	}
