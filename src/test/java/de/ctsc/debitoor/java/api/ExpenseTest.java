@@ -1,4 +1,4 @@
-package de.ctsc.debitoor.java.api.v4;
+package de.ctsc.debitoor.java.api;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -14,8 +14,6 @@ import org.junit.Test;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import de.ctsc.debitoor.java.api.Debitoor;
 
 public class ExpenseTest {
 
