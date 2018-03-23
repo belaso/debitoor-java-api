@@ -15,7 +15,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import de.ctsc.debitoor.java.api.ExpenseRepository;
+import de.ctsc.debitoor.java.api.Debitoor;
 
 public class ExpenseTest {
 
@@ -35,9 +35,9 @@ public class ExpenseTest {
 	}
 
 	@Test
-	public void connection() throws IOException {
-		ExpenseRepository expenseRepository = new ExpenseRepository(getAccessToken());
-		Expense expense = expenseRepository.findOne("59e21ce79f000d001b421a7e");
+	public void oneExpense() throws IOException {
+		Debitoor debitoor = new Debitoor(getAccessToken());
+		Expense expense = debitoor.get("/api/expenses/59e21ce79f000d001b421a7e/v4", Expense.class);
 		assertNotNull(expense);
 		assertEquals(Double.valueOf(313.29), expense.getTotalGrossAmount());
 		assertEquals("EUR", expense.getCurrency());
