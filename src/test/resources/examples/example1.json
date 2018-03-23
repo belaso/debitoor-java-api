@@ -1,0 +1,59 @@
+{
+	"date": "2017-10-02",
+	"lines": [
+		{
+			"description": "Kfz-Versicherung",
+			"priceDisplayType": "gross",
+			"grossAmount": 313.29,
+			"netAmount": 313.29,
+			"taxAmount": 0,
+			"categoryId": "vehicles.car_insurance",
+			"categoryType": "indirectCost",
+			"taxRate": 0
+		}
+	],
+	"number": 9,
+	"supplierCountry": "DE",
+	"totalGrossAmount": 313.29,
+	"totalNetAmount": 313.29,
+	"totalTaxAmount": 0,
+	"taxGroups": [
+		{
+			"netAmount": 313.29,
+			"taxAmount": 0,
+			"taxRate": 0
+		}
+	],
+	"currency": "EUR",
+	"id": "59e21ce79f000d001b421a7e",
+	"file": {
+		"type": "application/pdf",
+		"sizeBytes": 113846,
+		"lastModified": "2017-10-14T15:27:15.000Z",
+		"fileName": "Beleg-47.pdf",
+		"id": "59e22cd5acde28001b99e345",
+		"url": "/api/files/59e22cd5acde28001b99e345/v1",
+		"thumbnailsUrl": "/api/files/59e22cd5acde28001b99e345/thumbnails/v1"
+	},
+	"fileId": "59e22cd5acde28001b99e345",
+	"unpaidAmount": 0,
+	"attachmentOverQuota": false,
+	"payments": [
+		{
+			"paymentType": "bank",
+			"integrationType": "online",
+			"paymentAccountId": "A3232956.1",
+			"id": "59e21ce79f000d001b421a7f",
+			"createdDate": "2017-10-14T14:19:19Z",
+			"expenseId": "59e21ce79f000d001b421a7e",
+			"paymentTransactionId": "efd5ae86-5308-4fc0-b51b-9545188e9402_T3232956.441",
+			"amount": -313.29,
+			"currency": "EUR",
+			"text": "Lastschrift/Belast. Huk-Coburg-Allgemeine, Kraftfahrt-V Ersicherung 635/642581-G, Re-T 2149 , Folgebeitrag Zum 01.10.17End-To-End-Ref.: 212+Zkle 28.09.17 635/642581-G F Core / Mandatsref.: Mh028238793 Gläubiger-Id: De17Zzz00000031285 Ref. J6217272A1356690/14240",
+			"paymentDate": "2017-10-02",
+			"description": "Huk-Coburg Unternehmensgruppe, Lastschrift/Belast. Huk-Coburg-Allgemeine, Kraftfahrt-V Ersicherung 635/642581-G, Re-T 2149 , Folgebeitrag Zum 01.10.17End-To-End-Ref.: 212+Zkle 28.09.17 635/642581-G F Core / Mandatsref.: Mh028238793 Gläubiger-Id: De17Zzz00000031285 Ref. J6217272A1356690/14240"
+		}
+	],
+	"createdDate": "2017-10-14T14:19:19Z",
+	"lastModifiedDate": "2017-10-14T15:27:29Z"
+}
